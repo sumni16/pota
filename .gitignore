@@ -1,0 +1,5 @@
+// git hube에 올리지않음
+
+node_modules
+dist
+.cache
