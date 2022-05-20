@@ -1,0 +1,197 @@
+/* font-family: 'Raleway', sans-serif; */
+
+.hide
+{
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+/* 공통 */
+html
+{
+  font-size: 16px;
+  color: #666;
+  font-family: '나눔고딕스퀘어_ac','sans-serif';
+}
+a
+{
+  color: #666;
+}
+div>article,div>header
+{
+  width: 1134px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+#wrap>div
+{
+  padding: 70px 0px;
+}
+div>article>h3
+{
+  font: lighter 72px 'Raleway', sans-serif;
+  margin-bottom: 45px;
+  text-align: center;
+}
+img
+{
+
+}
+/* z-index : body, header(900), modal(2500) ,aside(200-1500), nav(1500) */
+/* header */
+#wrap>#header
+{
+  padding: 20px 0 20px;
+  background-color: rgba(60, 32, 61, 0.7);
+  /* 고정 */
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  z-index: 900;
+}
+#header>header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header>header a
+{
+  color: #fff;
+}
+#header>header>h1
+{
+  font: 30px '나눔고딕스퀘어_ac', sans-serif;
+}
+header>nav
+{}
+/* 
+header>nav>ul
+{
+  display: flex;
+} 
+*/
+header>nav>ul>li
+{
+  display: inline-block;
+  margin-left: 34px;
+  /* 대문자만들기 */
+  text-transform: uppercase;
+}
+
+/* header btn*/
+#header .btn
+{
+  position: absolute;
+  width: 40px; height: 40px;
+  /* background-color: pink; */
+  top: 20px; right: 20px;
+  display: none;
+}
+
+/* box01 */
+#box01
+{
+  /* width:auto; */
+  height: 100vh;
+  background: url(../images/header_back.png) no-repeat center top;
+  padding: 0px;
+}
+#box01>article
+{
+  height: 100vh;
+  position: relative;
+}
+#box01>article>h3
+{
+ position: absolute;
+ top: 24.4680851%; left: 0; width: 100%;
+ color: #fff;
+}
+#box01>article>ul
+{
+  position: absolute;
+  width: 100%; bottom: 18.0851063%;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#box01>article>ul>li
+{
+  width: 33.33333%;
+}
+#box01>article>ul>li>span
+{
+  width: 226px; height: 226px;
+  display: block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7) url(../images/header_icon_01.png) no-repeat center;
+  margin: 0 auto 17px;
+}
+#box01>article>ul>li:nth-child(2)>span
+{
+  background-image: url(../images/header_icon_02.png);
+}
+#box01>article>ul>li:nth-child(3)>span
+{
+  background-image: url(../images/header_icon_03.png);
+}
+#box01>article>ul>li>dl
+{
+  width: 226px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+}
+#box01>article>ul>li>dl>dt
+{
+  margin-bottom: 10px;
+}
+
+/* box02 */
+#box02
+{
+  background-color: #e8e8e8;
+}
+#info
+{
+  padding: 0 25px ;
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#info>h4
+{
+  width: 274px;
+  margin-left: 26px;
+}
+#info>h4>img
+{
+  width: auto;
+  height: 220px;
+}
+#info>ul
+{
+  width: 618px;
+  margin-right: 105px;
+}
+#info>ul>li
+{
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+#info>ul>li>dfn
+{
+  width: 150px;
+}
+#info>ul>li>span
+{
+  width: 468px;
+}
