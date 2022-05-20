@@ -39,7 +39,7 @@ div>article>h3
 }
 img
 {
-
+  max-width: 100%;
 }
 /* z-index : body, header(900), modal(2500) ,aside(200-1500), nav(1500) */
 /* header */
@@ -160,7 +160,6 @@ header>nav>ul>li
 }
 #info
 {
-  padding: 0 25px ;
   margin-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
@@ -170,11 +169,6 @@ header>nav>ul>li
 {
   width: 274px;
   margin-left: 26px;
-}
-#info>h4>img
-{
-  width: auto;
-  height: 220px;
 }
 #info>ul
 {
