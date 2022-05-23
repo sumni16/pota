@@ -174,6 +174,10 @@ header>nav>ul>li
 {
   width: 618px;
   margin-right: 105px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #info>ul>li
 {
@@ -189,11 +193,127 @@ header>nav>ul>li
 {
   width: 468px;
 }
+/* #skill */
+#skill
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#skill>h4
+{
+  width: 274px;
+  text-align: center;
+  /* margin-left: 26px; */
+}
+#skill>ul
+{
+  width: 618px;
+  margin-right: 105px;
+  line-height: 34px;
+}
+#skill>ul>li
+{
+  margin-bottom: 38px;
+  position: relative;
+}
+#skill>ul>li>dfn
+{
+  position: absolute;
+  width: 150px;
+  left: 0; top: 0;
+}
+#skill>ul>li>span
+{
+  display: block;
+  /* width: auto */
+  margin-left: 150px;
+  /* padding-left: 150px; */
+  background: #666 url('../images/bar.gif') no-repeat left top;
+  text-indent: -9999px;
+}
+#skill>ul>li:nth-child(1)>span
+{  background-size: 100% 100%; }
+#skill>ul>li:nth-child(2)>span
+{  background-size: 75% 100%; }
+#skill>ul>li:nth-child(3)>span
+{  background-size: 75% 100%; }
+#skill>ul>li:nth-child(4)>span
+{  background-size: 100% 100%; }
+#skill>ul>li:nth-child(5)>span
+{  background-size: 60% 100%; }
+
+/* box03 */
+#wrap>#box03
+{
+  padding-bottom:0;
+}
+#box03 ul
+{
+  display:flex;
+  margin-bottom:73px;
+  justify-content: center;
+}
+#box03 ul>li
+{
+  padding: 0 35px;
+  border-left:1px solid #666;
+}
+#box03 ul>li:first-child
+{
+  border-left:none;
+}
+
+#gallery
+{
+  position:relative;
+}
+#show{}
+
+#all
+{
+  display:flex;
+  flex-wrap:wrap;
+}
+#all>figure
+{
+  width:33.33333333%;
+  text-align:center;
+  margin-bottom:69px;
+}
+#all>figure>img
+{
+  width:257px;
+  margin: 0 auto 24px;
+  border-radius:50%;
+}
+
+/* button */
+#gallery>p
+{
+  position:absolute;
+  width:30px; height:30px;
+  background-color:red;
+  top:50%;
+  margin-top:-15px;
+  display:none;
+}
+#gallery>.next
+{
+  right:0;
+}
+#gallery>.prev
+{
+  left:0;
+}
+
+/* modal */
+/* #modal { display:none; }*/
 
 /* box04 */
 #box04
 {
-  background-color: #f93cf9;
+  background-color: #f93c64;
   color: #fff;
 }
 #box04 form
@@ -258,7 +378,7 @@ header>nav>ul>li
   font-size: 20px;
   background-color: #f69d20;
   border: none;
-  margin: 0;
+  /* margin: 0; */
   color: #fff;
 }
 
